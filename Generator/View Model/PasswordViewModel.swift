@@ -9,7 +9,7 @@ import Foundation
 
 class PasswordGeneratorViewModel: ObservableObject {
     
-    @Published var password = "Password"
+    @Published var password = "Create A New Password"
     
     // MARK: CHARACTER SETS
 

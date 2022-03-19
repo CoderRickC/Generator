@@ -22,7 +22,6 @@ struct PasswordAreaView: View {
                 .font(.title)
                 .multilineTextAlignment(.center)
             
-            /*Settings and Liked*
              HStack {
                  Spacer()
                  VStack {
@@ -45,10 +44,7 @@ struct PasswordAreaView: View {
                      }
                  }
              }
-             */
-
         }
-        
         .cornerRadius(20)
         .padding(.horizontal, 10)
         .frame(width: UIScreen.main.bounds.width * 1.0,

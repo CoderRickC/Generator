@@ -29,7 +29,6 @@
 		F925F6A227E6371400E81A80 /* FavouritePassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritePassword.swift; sourceTree = "<group>"; };
 		F925F6A327E6371400E81A80 /* PasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		F925F6AA27E6374B00E81A80 /* PasswordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
-		F9952D8F27E643C80018BD09 /* Generator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Generator.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +61,6 @@
 		F925F68E27E636F200E81A80 /* Generator */ = {
 			isa = PBXGroup;
 			children = (
-				F9952D8F27E643C80018BD09 /* Generator.entitlements */,
 				F925F68F27E636F200E81A80 /* GeneratorApp.swift */,
 				F925F6A927E6374B00E81A80 /* View Model */,
 				F925F69D27E6371400E81A80 /* Password View */,
