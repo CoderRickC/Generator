@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct GeneratorApp: App {
+    @StateObject var vm = PasswordGeneratorViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PasswordView()
+                .environmentObject(vm)
         }
     }
 }
