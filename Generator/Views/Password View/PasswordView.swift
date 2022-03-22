@@ -18,7 +18,6 @@ struct PasswordView: View {
             PasswordAreaView(password: vm.password)
                 .padding(.top, 40)
             SliderView(SliderValue: $length)
-            Spacer()
             HStack {
                 Button {
                     vm.createLettersPassword(of: Int(length))
@@ -43,16 +42,9 @@ struct PasswordView: View {
                     ButtonViews(title: "Letters & Numbers & Specials".uppercased())
                 }
             }
-            HStack {
-                Button {
-                    vm.createUUID()
-                } label: {
-                    ButtonViews(title: "UUID - Universally unique identifier".uppercased())
-                }
-            }
-            Spacer()
         }
-        .navigationBarHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        //.navigationBarHidden(true)
     }
 }
 

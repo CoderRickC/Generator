@@ -13,7 +13,7 @@ struct GeneratorApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                PasswordView()
+                TabbedView()
                     .environmentObject(vm)
             }
         }

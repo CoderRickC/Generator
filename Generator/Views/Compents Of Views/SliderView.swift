@@ -16,6 +16,8 @@ struct SliderView: View {
             Slider(value: $SliderValue, in: 4...50, step: 1)
                 .tint(.purple)
             Text("Password Length: \(Int(SliderValue))")
+                .font(.title2)
+                .fontWeight(.semibold)
         }
         .padding()
     }

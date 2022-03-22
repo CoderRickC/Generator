@@ -10,6 +10,8 @@ import Foundation
 class PasswordGeneratorViewModel: ObservableObject {
     
     @Published var password = "Create A New Password"
+    @Published var uuidString = "Create A New UUID"
+    @Published var favouritePasswords : [String] = []
     
     // MARK: CHARACTER SETS
 
@@ -112,6 +114,15 @@ class PasswordGeneratorViewModel: ObservableObject {
     }
     
     func createUUID() {
-        password = UUID().uuidString
+        uuidString = ""
+        uuidString = UUID().uuidString
     }
+    
+    // MARK: OTHER FUNCTIONS
+    
+    func addToFavourites() {
+        favouritePasswords.append(password)
+        print(favouritePasswords)
+    }
+    
 }

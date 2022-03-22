@@ -10,12 +10,13 @@ import SwiftUI
 struct ButtonViews: View {
     
     var title: String
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         Text(title)
             .font(.callout)
             .fontWeight(.semibold)
-            .foregroundColor(Color("InvertColor"))
+            .foregroundColor(Color(colorScheme == .light ? .white : .black))
             .lineLimit(nil)
             .frame(height: 60)
             .frame(width: UIScreen.main.bounds.width * 0.45)

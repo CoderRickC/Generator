@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct FavouritePassword: View {
+    
+    @EnvironmentObject var vm : PasswordGeneratorViewModel
+    
     var body: some View {
         VStack {
             List {
-                Text("Hello World")
+                ForEach(vm.favouritePasswords, id: \.self) { index in
+                    Text(index)
+                        .font(.title)
+                }
             }
+            .navigationTitle("Saved Password")
         }
     }
 }
@@ -20,5 +27,6 @@ struct FavouritePassword: View {
 struct FavouritePassword_Previews: PreviewProvider {
     static var previews: some View {
         FavouritePassword()
+            .environmentObject(PasswordGeneratorViewModel())
     }
 }
