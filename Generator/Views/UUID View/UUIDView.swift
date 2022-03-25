@@ -14,7 +14,10 @@ struct UUIDView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             PasswordAreaView(password: vm.uuidString)
+                .offset(y: -50)
+            Spacer()
             Button {
                 vm.createUUID()
             } label: {
@@ -27,9 +30,8 @@ struct UUIDView: View {
                     .frame(width: UIScreen.main.bounds.width * 0.95)
                     .background(Color.primary)
                     .cornerRadius(20)
-                    .padding(.top, 50)
             }
-
+            Spacer()
         }
     }
 }

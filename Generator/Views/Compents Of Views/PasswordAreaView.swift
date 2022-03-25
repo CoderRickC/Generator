@@ -23,13 +23,10 @@ struct PasswordAreaView: View {
                 .padding()
                 .font(.title)
                 .multilineTextAlignment(.center)
-            
-             /*
-              HStack {
-                  
+             /***
+               HStack {
                   Spacer()
-                  
-                  VStack {
+                   VStack {
                       NavigationLink {
                          FavouritePassword()
                       } label: {
@@ -39,7 +36,6 @@ struct PasswordAreaView: View {
                               .padding()
                       }
                       Spacer()
-                      
                       Button {
                           isFavourite = true
                           DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {

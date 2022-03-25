@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FavouritePassword: View {
     
-    @EnvironmentObject var vm : PasswordGeneratorViewModel
+    @StateObject var vm = PasswordGeneratorViewModel()
     
     var body: some View {
         VStack {
@@ -19,7 +19,6 @@ struct FavouritePassword: View {
                         .font(.title)
                 }
             }
-            .navigationTitle("Saved Password")
         }
     }
 }

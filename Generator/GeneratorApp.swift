@@ -12,10 +12,8 @@ struct GeneratorApp: App {
     @StateObject var vm = PasswordGeneratorViewModel()
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                TabbedView()
-                    .environmentObject(vm)
-            }
+            TabbedView()
+                .environmentObject(vm)
         }
     }
 }

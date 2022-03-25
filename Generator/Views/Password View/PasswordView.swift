@@ -30,6 +30,8 @@ struct PasswordView: View {
                     ButtonViews(title: "Letters & \n Numbers".uppercased())
                 }
             }
+            .padding(.top, 30)
+            
             HStack {
                 Button {
                     vm.createLettersAndSpecials(of: Int(length))
@@ -42,9 +44,8 @@ struct PasswordView: View {
                     ButtonViews(title: "Letters & Numbers & Specials".uppercased())
                 }
             }
+            Spacer()
         }
-        .navigationBarTitleDisplayMode(.inline)
-        //.navigationBarHidden(true)
     }
 }
 

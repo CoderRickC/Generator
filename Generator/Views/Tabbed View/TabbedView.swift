@@ -15,21 +15,12 @@ struct TabbedView: View {
                     Image(systemName: "key")
                     Text("Passwords")
                 }
-                .badge(0)
             
             UUIDView()
                 .tabItem {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
                     Text("UUID")
                 }
-                .badge(0)
-            
-            Color.yellow
-                .tabItem {
-                    Image(systemName: "heart.fill")
-                    Text("Random")
-                }
-                .badge(0)
         }
     }
 }
